@@ -12,7 +12,7 @@ const Home = (props) => {
     const [searchValue, setSearchValue] = useState('')
 
     useEffect(() => {
-        axios.get(`http://www.omdbapi.com/?s=${searchValue ? searchValue : 'star wars'}&apikey=3d018ec`).then(response => {
+        axios.get(`https://www.omdbapi.com/?s=${searchValue ? searchValue : 'star wars'}&apikey=3d018ec`).then(response => {
             setmovie(response.data.Search)
 
         })
